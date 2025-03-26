@@ -63,3 +63,5 @@ venv.bak/
 *.swp
 *.swo
 
+Usersmrmiz.git-credentials-envspace
+*.git-credentials*
