@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyproject-init"
+version = "0.1.0"
+authors = [
+    {name = "Mizokuiam", email = "your@email.com"},
+]
+description = "A CLI tool to generate pyproject.toml files with common development tools"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = [
+    "typer[all]>=0.9.0,<1.0.0",
+    "toml>=0.10.2,<1.0.0",
+]
+
+[project.scripts]
+pyproject-init = "pyproject_init:app"
+
+[project.urls]
+"Homepage" = "https://github.com/Mizokuiam/PyProject-Init"
+"Bug Tracker" = "https://github.com/Mizokuiam/PyProject-Init/issues"
+
